@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h2 class="name">
+
+        </h2>
+        <p class="OCprofile">
+
+            <img class="img" src="profile" alt="" loading="lazy" onclick="openModal(this)">
+        <p id="text">
+            name: (male)<br>
+            height: ㎝<br>
+            weight: ㎏<br>
+            특징: <br>
+            <span style="color: rgb(176, 176, 176); font-weight: bold;">HP</span>
+            <meter min="0" max="100" low="20" high="60" optimum="100" value="3"></meter>
+        </p>
+        </p>
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <img class="img" src="profile" alt="" loading="lazy" onclick="openModal(this)">
+
+
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider1')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider1')">❯</button>
+        </div>
+
+        <details>
+            <summary>comment</summary>
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('ko')">한국어</button> <br>
+            <span data-en=" ㅤ" data-ko=" ㅤ">
+                <br>
+            </span>
+        </details>
+
+        <script>
+            function setLanguage(lang) {
+                document.documentElement.lang = lang;
+                const elements = document.querySelectorAll('[data-en]');
+                elements.forEach(element => {
+                    element.textContent = element.getAttribute(`data-${lang}`);
+                });
+            }
+        </script>
+
+        <p id="rq">
+            <span style="color: aliceblue; font-weight: bold;">gallery</span><br>
+        </p>
+        <div class="slider" id="slider2">
+            <div class="slides">
+                <img class="img" src="profile" alt="" loading="lazy" title="crepe  commission"
+                    onclick="openModal(this)">
+
+
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider2')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider2')">❯</button>
+        </div>
+
+        <!-- 모달 구조 -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+
+
+            <script src="script.js"></script>
+
+
+        </div>
+    </div>
+    <div id="up">
+        <a style="color: rgb(189, 189, 189);" href="character.html">⭠</a>
+    </div>
+    </div>
+</body>

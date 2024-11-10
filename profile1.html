@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h2 class="name">
+            𖧞
+        </h2>
+        <p class="OCprofile">
+
+            <img class="img" src="profile1/profile.png" alt="" loading="lazy" onclick="openModal(this)">
+        <p id="text">
+            name: Memphis Dunn (male)<br>
+            height: 178㎝<br>
+            weight: 69㎏<br>
+           슬라이드가 좀 이상하긴한데 무시하셈 <br>
+        </p>
+        </p>
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <img class="img" src="profile1/1.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/2.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/3.jpg" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/4.jpg" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/5.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/6.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/7.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/8.png" alt="" loading="lazy" onclick="openModal(this)">
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider1')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider1')">❯</button>
+        </div>
+        <details>
+            <summary>comment</summary>
+            <h3>성격</h3>
+            융통성있음, 개인주의적임, 게으름<br>
+
+
+            <h3>외관</h3>
+            백인임, 비니때문에 눈썹이 안 보임, 유선헤드폰을 거의 벗지 않음<br>
+
+
+            <h3>L/H/S</h3>
+            테크노(음악), 몬ㅅ터 에너지, 불닭볶ㅇ면(과 그에 준하는 매운 라면) / 우유, 느린것(라면은 빨라서 좋다)<br>
+
+
+            <h3>특징</h3>
+            그냥 생 미국인인데 부모님 일 때문에 고등학교부터 한국에서 다니는 중. 알파세대 슬랭을 매우 잘 구사한다.<br>
+
+
+            <h3>소지품</h3>
+            소니 유선헤드폰, 몬스터 에너지 한 캔, 몬스터 에너지 제로 슈거 두 캔, 원목 튀김요리용 젓가락 한 쌍<br>
+            ㅤ<br>
+            </span>
+        </details>
+        <p id="video">
+            <span style="color: aliceblue; font-weight: bold;">video</span><br>
+
+        </p>
+        <div class="slider" id="slider3">
+            <div class="slides">
+                <video class="img" src="profile1/1.mp4" controls></video>
+            
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider3')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider3')">❯</button>
+        </div>
+
+        <p id="other">
+            <span style="color: aliceblue; font-weight: bold;">other</span><br>
+
+        </p>
+        <div class="slider" id="slider2">
+            <div class="slides">
+                <img class="img" src="profile1/a.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/b.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/c.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/d.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/e.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/f.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/g.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/h.png" alt="" loading="lazy" onclick="openModal(this)">
+
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider2')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider2')">❯</button>
+        </div>
+
+        <!-- 모달 구조 -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+
+
+            <script src="script.js"></script>
+
+
+        </div>
+    </div>
+
+</body>
