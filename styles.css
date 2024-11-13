@@ -1,27 +1,53 @@
 body {
     background: content-box radial-gradient(rgb(94, 94, 94), rgb(17, 17, 17));
-   
+margin-top: 100px;
+margin-bottom: 100px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/* 기본 nav 스타일 (데스크탑, 태블릿용) */
-nav {
-    display: flex;
-    justify-content: center;
-    /* 가로로 가운데 정렬 */
-    align-items: center;
-    color: whitesmoke;
-    border-bottom: 1px solid whitesmoke;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 30px;
+.box-shortcut {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    z-index: 1000;
+    
 }
 
+.box-shortcut {
+    width: 100px;
+    border-radius: 10px;
+    background: #232323
+}
+
+.box-shortcut .menu>li>a {
+    display: block;
+    
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+.box-shortcut .menu>li:first-child>.on {
+    border-radius: 10px 10px 0 0;
+     color: rgb(189, 189, 189);
+}
+
+.box-shortcut .btn-scroll-top {
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    width: 100px;
+    background: #0e0e0e;
+}
+
+.box-shortcut .btn-scroll-top {
+    color: rgb(189, 189, 189);
+}
 ul {
-    display: flex;
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -31,43 +57,10 @@ ul {
 }
 
 li {
-    margin-right: 20px;
-    /* 항목 간 간격 조절 */
-    text-align: center;
-}
-
-/* 모바일을 위한 스타일 */
-@media (max-width: 768px) {
-    nav {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-
-    ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-        /* 데스크탑에서 줄바꿈 허용 */
-    }
-
-    @media (max-width: 768px) {
-        ul {
-            flex-wrap: wrap;
-            /* 모바일에서도 줄바꿈 허용 */
-            justify-content: center;
-            overflow-x: hidden;
-            /* 가로 스크롤 비활성화 */
-        }
-    }
-
-
-    nav a {
-        font-size: 14px;
-        /* 모바일에서 텍스트 크기를 줄임 */
-    }
+   
+    font-size: small;
+   text-align:center;
+padding: 5px;
 }
 
 
@@ -77,6 +70,7 @@ li:hover {
 }
 
 .wrap {
+   
     margin: auto;
     max-width: 90%;
     /* 부모 요소가 가로 너비를 차지하도록 */
@@ -122,7 +116,7 @@ a {
     text-align: center;
     margin-bottom: 2px;
     padding-bottom: 20px;
-    
+
 
 }
 
@@ -320,7 +314,7 @@ button.next {
 
 p {
     color: aliceblue;
-   
+
 }
 
 details {
@@ -360,8 +354,8 @@ h2 {
     margin-bottom: 0;
 }
 
- /* 버튼 스타일 */
- button {
+/* 버튼 스타일 */
+button {
     background-color: #0000004e;
     color: white;
     border: none;
@@ -371,14 +365,15 @@ h2 {
     font-size: 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
+}
 
-  /* 버튼 hover 효과 */
-  button:hover {
+/* 버튼 hover 효과 */
+button:hover {
     background-color: #6c6c6c;
-  }
+}
 
-  /* 버튼 클릭 시 눌리는 효과 */
-  button:active {
+/* 버튼 클릭 시 눌리는 효과 */
+button:active {
     background-color: #8a8a8a;
-  }
+}
+
