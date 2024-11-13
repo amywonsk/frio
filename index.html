@@ -10,17 +10,20 @@
 
 <body>
   <div class="wrap">
-    <h1 class="title">𖧞</h1>
+    
 
-    <nav>
+    <div class="box-shortcut">
       <ul>
         <li><a href="okman.html">ㅤ ㅤ</a></li>
         <li><a href="#INFO">INFO</a></li>
         <li><a href="#COMMISSION">COMMISSION</a></li>
+        <li><a href="character.html">OC↵</a></li>
         <li><a href="#GALLERY">GALLERY</a></li>
-        <li><a href="okman.html">ㅤ ㅤ</a></li>
+        
       </ul>
-    </nav>
+
+    <button class="btn-scroll-top" title="스크롤 이동">up</button>
+  </div>
 
     <div class="music">
       <iframe src="https://www.youtube.com/embed/x6Jv_JrjJIY?si=zgbXz8K-RzC1dlVK" title="YouTube video player"
@@ -133,45 +136,20 @@
 
       <div class="slider" id="slider1">
         <div class="slides">
-
-          <img class="img" src="클리핑수리.jpg" alt="" loading="lazy" onclick="openModal(this)">
-          <img class="img" src="페이저.jpg" alt="" loading="lazy" onclick="openModal(this)">
-          <img class="img" src="리버브.jpg" alt="" loading="lazy" onclick="openModal(this)">
-
+          <img class="img" src="jhk.png" alt="" loading="lazy" onclick="openModal(this)">
         </div>
         <button class="prev" onclick="moveSlides(-1, 'slider1')">❮</button>
         <button class="next" onclick="moveSlides(1, 'slider1')">❯</button>
       </div>
 
-
-
-      <p></p>
-      <a href="#GALLERY2">
-        <h2 id="GALLERY2">✦ GALLERY 2</h2>
-      </a>
-      <div class="slider" id="slider2">
-        <div class="slides">
-          <img class="img" src="ㅂㅈㄷ.jpg" alt="" loading="lazy" onclick="openModal(this)">
-          <img class="img" src="1ㅂㅈㄷ.jpg" alt="" loading="lazy" onclick="openModal(this)">
-          <img class="img" src="ㅂㅈㄷ1.jpg" alt="" loading="lazy" onclick="openModal(this)">
-          <img class="img" src="jhk.png" alt="" loading="lazy" onclick="openModal(this)">
-
-
-        </div>
-        <button class="prev" onclick="moveSlides(-1, 'slider2')">❮</button>
-        <button class="next" onclick="moveSlides(1, 'slider2')">❯</button>
-      </div>
-
-
+    
       <!-- 모달 구조 -->
       <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="modalImg">
         <div id="caption"> </div>
       </div>
-      <p id="up">
-        <a href="#" style="color: rgb(189, 189, 189);">⭡</a>
-      </p>
+      
       <script src="script.js"></script>
     </div>
   </div>
