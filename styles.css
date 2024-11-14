@@ -8,43 +8,80 @@ html {
     scroll-behavior: smooth;
 }
 
+/* box-shortcut 수정 */
 .box-shortcut {
     position: fixed;
-    right: 50px;
-    top: 50%;
+    bottom: 10px; /* 모바일에서 하단으로 이동 */
+    right: 10px; /* 오른쪽 정렬 */
     z-index: 1000;
-    
-}
-
-.box-shortcut {
-    width: 100px;
+    width: auto; /* 크기 자동 조정 */
+    max-width: 120px; /* 최대 너비 제한 */
     border-radius: 10px;
-    background: #232323
+    background: #232323;
+    padding: 5px;
 }
 
-.box-shortcut .menu>li>a {
+/* 리스트 스타일 */
+.box-shortcut ul {
+    display: flex; /* 가로 정렬 */
+    flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
+    gap: 5px; /* 항목 간 간격 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* 가운데 정렬 */
+}
+
+/* 리스트 항목 */
+.box-shortcut li {
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+}
+
+/* 링크 스타일 */
+.box-shortcut .menu > li > a {
     display: block;
-    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
     padding: 10px;
+    background: #333;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
-
-
-.box-shortcut .menu>li:first-child>.on {
-    border-radius: 10px 10px 0 0;
-     color: rgb(189, 189, 189);
+.box-shortcut .menu > li > a:hover {
+    opacity: 0.8; /* 호버 시 투명도 조정 */
 }
 
+/* 첫 번째 항목 스타일 */
+.box-shortcut .menu > li:first-child > .on {
+    border-radius: 10px 10px 0 0;
+    color: rgb(189, 189, 189);
+}
+
+/* 스크롤 버튼 */
 .box-shortcut .btn-scroll-top {
     padding: 10px;
     border-radius: 0 0 10px 10px;
     width: 100px;
     background: #0e0e0e;
+    color: rgb(189, 189, 189);
+    text-align: center;
 }
 
-.box-shortcut .btn-scroll-top {
-    color: rgb(189, 189, 189);
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    .box-shortcut {
+        width: 90%; /* 화면 크기에 맞게 조정 */
+        left: 5%; /* 중앙으로 이동 */
+        bottom: 20px; /* 조금 더 위로 이동 */
+    }
+
+    .box-shortcut ul {
+        flex-direction: column; /* 세로 정렬 */
+        align-items: center; /* 가운데 정렬 */
+    }
 }
 ul {
 
@@ -307,6 +344,11 @@ button.next {
 }
 
 .OCprofile {
+    float: left;
+    margin: 1px;
+    padding: 10px;
+}
+.ID {
     float: left;
     margin: 1px;
     padding: 10px;

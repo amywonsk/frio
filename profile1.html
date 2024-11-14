@@ -27,9 +27,9 @@
             color: rgb(0, 255, 0);
             text-shadow: 2px 2px #000000;
         }
-       
-       
-       
+
+
+
     }
 </style>
 
@@ -45,23 +45,33 @@
         </ul>
 
         <button class="btn-scroll-top" title="스크롤 이동">up</button>
+        <script>
+            document.querySelector('.btn-scroll-top').addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
     </div>
     <div class="wrap">
         <h2 class="name">
             Memphis
         </h2>
-        <p class="OCprofile">
+        <p class="ID">
 
-            <img class="img" src="profile1/profile.png" alt="" loading="lazy" onclick="openModal(this)">
+            <img class="img" src="profile1/ID.jpg" alt="" loading="lazy" onclick="openModal(this)">
         <p id="text">
             name: Memphis Dunn (male)<br>
             height: 178㎝<br>
             weight: 69㎏<br>
-             <br>
+            <br>
         </p>
         </p>
         <div class="slider" id="slider1">
             <div class="slides">
+                <img class="img" src="profile1/11.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/12.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/10.png" alt="" loading="lazy" onclick="openModal(this)">
 
                 <img class="img" src="profile1/9.jpg" alt="" loading="lazy" onclick="openModal(this)">
@@ -112,34 +122,35 @@
             <span style="color: rgb(0, 255, 0); font-weight: bold;">video</span><br>
         </p>
 
-        <div class="slider" id="slider3">
+        <div class="slider" id="slider2">
             <div class="slides">
                 <video class="img" src="profile1/1.mp4" controls></video>
 
             </div>
-            <button class="prev" onclick="moveSlides(-1, 'slider3')">❮</button>
-            <button class="next" onclick="moveSlides(1, 'slider3')">❯</button>
+            <button class="prev" onclick="moveSlides(-1, 'slider2')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider2')">❯</button>
         </div>
 
         <p id="other">
             <span style="color: rgb(0, 255, 0); font-weight: bold;">other</span><br>
         </p>
-        <div class="slider" id="slider4">
+        <div class="slider" id="slider3">
             <div class="slides">
-                <img class="img" src="profile1/aa.png" alt="" loading="lazy" onclick="openModal(this)">
-                <img class="img" src="profile1/ab.png" alt="" loading="lazy" onclick="openModal(this)">
-                <img class="img" src="profile1/ac.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/1a.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/1b.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/1c.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/1d.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/1e.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/1f.png" alt="" loading="lazy" onclick="openModal(this)">
 
             </div>
-            <button class="prev" onclick="moveSlides(-1, 'slider4')">❮</button>
-            <button class="next" onclick="moveSlides(1, 'slider4')">❯</button>
+            <button class="prev" onclick="moveSlides(-1, 'slider3')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider3')">❯</button>
         </div>
-
-
-        <div class="slider" id="slider2">
+        <div class="slider" id="slider4">
             <div class="slides">
-                <img class="img" src="profile1/i.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/a.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/i.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/b.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/c.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/d.png" alt="" loading="lazy" onclick="openModal(this)">
@@ -147,11 +158,21 @@
                 <img class="img" src="profile1/f.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/g.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/h.png" alt="" loading="lazy" onclick="openModal(this)">
-                <img class="img" src="profile1/j.png" alt="" loading="lazy" onclick="openModal(this)">
                 <img class="img" src="profile1/GcBS0WgaUAAo1j3.jpg" alt="" loading="lazy" onclick="openModal(this)">
             </div>
-            <button class="prev" onclick="moveSlides(-1, 'slider2')">❮</button>
-            <button class="next" onclick="moveSlides(1, 'slider2')">❯</button>
+            <button class="prev" onclick="moveSlides(-1, 'slider4')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider4')">❯</button>
+        </div>
+
+        <div class="slider" id="slider5">
+            <div class="slides">
+                <img class="img" src="profile1/aa.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/ab.png" alt="" loading="lazy" onclick="openModal(this)">
+                <img class="img" src="profile1/ac.png" alt="" loading="lazy" onclick="openModal(this)">
+
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider5')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider5')">❯</button>
         </div>
 
 
