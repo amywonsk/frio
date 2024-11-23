@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: 'Bebas Neue';
+        background: content-box radial-gradient(rgb(0, 0, 0), rgb(68, 68, 68));
+    }
+        .name {
+            color: rgb(255, 255, 255);
+            text-shadow: 3px 3px #000000;
+        }
+
+        #text {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px #000000;
+        }
+
+        summary {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px #000000;
+        }
+
+    
+
+
+  
+</style>
+<body>
+    <div class="box-shortcut">
+        <ul>
+
+            <li><a href="index.html">INFO↵</a></li>
+
+            <li><a href="character.html">⭠OC</a></li>
+
+
+        </ul>
+
+        <button class="btn-scroll-top" title="스크롤 이동">up</button>
+        <script>
+            document.querySelector('.btn-scroll-top').addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+    </div>
+    
+    <div class="wrap">
+        <h2 class="name">
+            HBB
+        </h2>
+        <p class="ID">
+            <img class="img" src="profile4/1.jpg" alt="" loading="lazy" onclick="openModal(this)">
+            <audio class='audioPlayer' autoplay controls loop  title='Song artist/title goes here...'>
+                <source src='profile4/Epilogue .mp3' type='audio/mpeg'>
+              </audio>
+        <p id="text">
+            name † 흥봉봉 (male)<br>
+            height † 183㎝<br>
+            weight † 71㎏<br>
+            date of birth † 23 NOV ____
+            <br>
+        </p>
+     
+        <details>
+            <summary>comment</summary>
+            <span >
+                <h3>성격</h3>
+                <br>
+
+
+                <h3>외관</h3>
+               콧등까지 오는 기장의 생머리, 빈티지 옷,  <br>
+
+
+                <h3>L/H/S</h3>
+                like † 베지밀B두유, <br>
+                hate † <br>
+                scared † <br>
+                <h3>특징</h3>
+                <br>
+
+
+                <h3>소지품</h3>
+               유선 줄 이어폰 하나, Burt's bees 자몽향 립밤 하나<br>
+                ㅤ<br>
+            </span>
+        </details>
+        </p>
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <img class="img" src="profile4/asdas wrgt.png" alt="" loading="lazy" onclick="openModal(this)">
+               
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider1')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider1')">❯</button>
+        </div>
+        
+        <p id="video">
+            <span ">video</span><br>
+        </p>
+
+        <div class="slider" id="slider2">
+            <div class="slides">
+                <video class="img" src=" " controls></video>
+
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider2')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider2')">❯</button>
+        </div>
+
+        <p id="other">
+            <span>other</span><br>
+        </p>
+        <div class="slider" id="slider3">
+            <div class="slides">
+               
+            </div>
+            <button class="prev" onclick="moveSlides(-1, 'slider3')">❮</button>
+            <button class="next" onclick="moveSlides(1, 'slider3')">❯</button>
+        </div>
+       
+
+       
+
+
+        <!-- 모달 구조 -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+            <div id="caption"></div>
+
+
+            <script src="script.js"></script>
+
+
+        </div>
+    </div>
+
+</body>
