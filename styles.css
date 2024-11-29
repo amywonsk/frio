@@ -70,19 +70,7 @@ html {
     text-align: center;
 }
 
-/* 반응형 디자인 */
-@media screen and (max-width: 768px) {
-    .box-shortcut {
-        width: 90%; /* 화면 크기에 맞게 조정 */
-        left: 5%; /* 중앙으로 이동 */
-        bottom: 20px; /* 조금 더 위로 이동 */
-    }
 
-    .box-shortcut ul {
-        flex-direction: column; /* 세로 정렬 */
-        align-items: center; /* 가운데 정렬 */
-    }
-}
 ul {
 
     list-style: none;
