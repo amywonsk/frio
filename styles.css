@@ -371,17 +371,17 @@ summary {
 
 /* meter 최적값에서 많이 부족한 색상 설정 */
 meter::-webkit-meter-even-less-good-value {
-    background-color: #b30c0c;
+    background-color: #6c6c6c;
 }
 
 /* meter 최적값에 근접한 색상 설정 */
 meter::-webkit-meter-suboptimum-value {
-    background-color: #ffb300;
+    background-color: #454545;
 }
 
 /* meter 최적값 색상 설정 */
 meter::-webkit-meter-optimum-value {
-    background-color: #21b02d;
+    background-color: #000000;
 }
 
 h2 {
@@ -414,21 +414,4 @@ button:active {
     background-color: #8a8a8a;
 }
 
-.audioPlayer{
-    display: block;
-    border-radius: 20px;
-    margin:0 auto;
-    margin-top: 5px;
-    width: 500px;
-    height: 30px;
 
-  }
-
-  audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-panel {
-  background-color: #0f0f0f;
-  color: #9e9e9e;
-  -webkit-text-fill-color: #ccc;
- 
-  
-}
